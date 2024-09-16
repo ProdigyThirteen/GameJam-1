@@ -20,7 +20,7 @@ public class PlayerMovement : MonoBehaviour
     
     // Private variables
     private int _jumps = 0;
-    private const float _groundCheckDistance = 0.05f;
+    private const float _groundCheckDistance = 0.1f;
 
     private Rigidbody2D _rb;
     private Collider2D _playerCollider;
@@ -30,8 +30,6 @@ public class PlayerMovement : MonoBehaviour
     {
         _rb = GetComponent<Rigidbody2D>();
         _playerCollider = GetComponent<Collider2D>();
-        
-        _jumps = maxJumps;
     }
 
     private void Update()
@@ -39,15 +37,10 @@ public class PlayerMovement : MonoBehaviour
         Move();
         Jump();
         
-        if (IsGrounded())
+        if (IsGrounded() && _rb.velocity.y <= 0)
         {
-            _jumps = maxJumps;
+            _jumps = 0;
         }
-    }
-    
-    private void FixedUpdate()
-    {
-
     }
 
     private void Move()
@@ -63,10 +56,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump()
     {
-        if (Input.GetButtonDown("Jump") && _jumps > 0)
+        if (Input.GetButtonDown("Jump") && _jumps < maxJumps)
         {
             _rb.velocity = new Vector2(_rb.velocity.x, jumpForce);
-            _jumps--;
+            _jumps++;
         }
     }
 
@@ -85,9 +78,6 @@ public class PlayerMovement : MonoBehaviour
             _groundCheckDistance,                        
             groundLayer                         
         );
-        
-        if (hit.collider != null)
-            Debug.Log("Hit: " + hit.collider.name);
         
         // If the ray hits the ground, the player is grounded
         return hit.collider != null;
