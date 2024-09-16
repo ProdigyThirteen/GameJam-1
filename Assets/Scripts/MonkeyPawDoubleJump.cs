@@ -30,6 +30,10 @@ public class MonkeyPawDoubleJump : MonoBehaviour
                 trapsToEnable.transform.GetChild(i).gameObject.SetActive(true);
             }
         }
+        else
+        {
+            Debug.LogWarning("No trapsToEnable object set in the Inspector. Please set one to enable traps.");
+        }
         
         // Give the player an extra jump
         if (playerMovement != null)

@@ -15,50 +15,82 @@ public class PlayerMovement : MonoBehaviour
     private float jumpForce = 5.0f;
     [SerializeField]
     private int maxJumps = 1;
+    [SerializeField]
+    private LayerMask groundLayer;
     
     // Private variables
-    private int jumps = 0;
+    private int _jumps = 0;
+    private const float _groundCheckDistance = 0.05f;
 
-    private Rigidbody2D rb;
-    
+    private Rigidbody2D _rb;
+    private Collider2D _playerCollider;
 
-    void Start()
+
+    private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
+        _rb = GetComponent<Rigidbody2D>();
+        _playerCollider = GetComponent<Collider2D>();
+        
+        _jumps = maxJumps;
     }
-    
-    void Update()
+
+    private void Update()
     {
         Move();
         Jump();
+        
+        if (IsGrounded())
+        {
+            _jumps = maxJumps;
+        }
     }
     
-    void Move()
+    private void FixedUpdate()
+    {
+
+    }
+
+    private void Move()
     {
         float move = Input.GetAxis("Horizontal");
-        rb.velocity = new Vector2(move * movementSpeed, rb.velocity.y);
+        _rb.velocity = new Vector2(move * movementSpeed, _rb.velocity.y);
         
-        if (rb.velocity.magnitude > maxMoveSpeed)
+        if (_rb.velocity.magnitude > maxMoveSpeed)
         {
-            rb.velocity = rb.velocity.normalized * maxMoveSpeed * Time.deltaTime;
+            _rb.velocity = _rb.velocity.normalized * maxMoveSpeed * Time.deltaTime;
         }
     }
 
-    void Jump()
+    private void Jump()
     {
-        if (Input.GetButtonDown("Jump") && jumps < maxJumps)
+        if (Input.GetButtonDown("Jump") && _jumps > 0)
         {
-            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
-            jumps++;
+            _rb.velocity = new Vector2(_rb.velocity.x, jumpForce);
+            _jumps--;
         }
     }
-    
-    void OnCollisionEnter2D(Collision2D other)
+
+    private bool IsGrounded()
     {
-        // Ground check
-        if (!other.gameObject.CompareTag("Ground")) return;
+        // Get collider bounds to offset position of raycast
+        Vector2 position = transform.position;
+        Vector2 size = _playerCollider.bounds.size;
         
-        jumps = 0;
+        Vector2 origin = new Vector2(position.x, position.y - size.y / 2);
+        
+        // Cast a ray downwards from the player's position
+        RaycastHit2D hit = Physics2D.Raycast(
+            origin,     
+            Vector2.down,                
+            _groundCheckDistance,                        
+            groundLayer                         
+        );
+        
+        if (hit.collider != null)
+            Debug.Log("Hit: " + hit.collider.name);
+        
+        // If the ray hits the ground, the player is grounded
+        return hit.collider != null;
     }
 
     public void AddMaxJump()
