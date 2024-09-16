@@ -22,24 +22,16 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     
-    
-    
-    // Start is called before the first frame update
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         Move();
         Jump();
-    }
-    
-    void FixedUpdate()
-    {
-
     }
     
     void Move()
@@ -60,5 +52,13 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jumps++;
         }
+    }
+    
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        // Ground check
+        if (!other.gameObject.CompareTag("Ground")) return;
+        
+        jumps = 0;
     }
 }
