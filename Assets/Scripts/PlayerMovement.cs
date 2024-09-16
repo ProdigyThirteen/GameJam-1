@@ -18,7 +18,6 @@ public class PlayerMovement : MonoBehaviour
     
     // Private variables
     private int jumps = 0;
-    private bool isGrounded = false;
 
     private Rigidbody2D rb;
     
@@ -60,5 +59,15 @@ public class PlayerMovement : MonoBehaviour
         if (!other.gameObject.CompareTag("Ground")) return;
         
         jumps = 0;
+    }
+
+    public void AddMaxJump()
+    {
+        maxJumps++;
+    }
+    
+    public void RemoveMaxJump()
+    {
+        maxJumps--;
     }
 }
