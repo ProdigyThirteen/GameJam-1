@@ -103,6 +103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementImpulse: 4000
   maxMoveSpeed: 5
+  slideSound: {fileID: 8300000, guid: af9ce8fae281541409f73ba67f49b905, type: 3}
   jumpForce: 5
   maxJumps: 1
   groundLayer:
@@ -120,6 +121,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ec2229a3a86a5c498eda25a48bcb429, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isBarrierActive: 0
+  isBarrierEnabled: 0
+  barrierCooldown: 15
+  barrierPopSound: {fileID: 8300000, guid: bf4325afc40beac429c65f44cfa08322, type: 3}
 --- !u!50 &8540591516214770556
 Rigidbody2D:
   serializedVersion: 4
