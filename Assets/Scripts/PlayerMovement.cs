@@ -97,14 +97,14 @@ public class PlayerMovement : MonoBehaviour
         maxJumps--;
     }
     
-    public void AddMovementImpulse(float speed)
+    public void AddMovementImpulse(float impulse)
     {
-        movementImpulse += speed;
+        movementImpulse += impulse;
     }
     
-    public void RemoveMovementImpulse(float speed)
+    public void RemoveMovementImpulse(float impulse)
     {
-        movementImpulse -= speed;
+        movementImpulse -= impulse;
     }
     
     public void AddMaxMoveSpeed(float speed)

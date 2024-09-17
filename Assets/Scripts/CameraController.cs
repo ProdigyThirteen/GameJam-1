@@ -45,8 +45,8 @@ public class CameraController : MonoBehaviour
         currentZoom = Mathf.SmoothDamp(currentZoom, targetZoom, ref zoomVelocity, zoomSmoothTime);
         
         // Apply the new zoom to the camera
-        Camera.main.orthographicSize = currentZoom;
-        
+        if (Camera.main != null) Camera.main.orthographicSize = currentZoom;
+
         // Target position for the camera (player's position plus the offset)
         Vector3 targetPosition = player.position + offset;
 

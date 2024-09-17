@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1271914934209645366}
   - component: {fileID: 8996340744450203329}
   - component: {fileID: 3147481024213645864}
+  - component: {fileID: 1375266721173637124}
   - component: {fileID: 8540591516214770556}
   - component: {fileID: 4327354801338695632}
   m_Layer: 0
@@ -100,13 +101,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d6bf6514d1aad84792a51433a882a6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 5
-  maxMoveSpeed: 10
+  movementImpulse: 4000
+  maxMoveSpeed: 5
   jumpForce: 5
   maxJumps: 1
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+--- !u!114 &1375266721173637124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068798522976125984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ec2229a3a86a5c498eda25a48bcb429, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!50 &8540591516214770556
 Rigidbody2D:
   serializedVersion: 4
@@ -123,17 +136,17 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: cb085aa046199074180f5110691ee0bb, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &4327354801338695632
 BoxCollider2D:
   m_ObjectHideFlags: 0

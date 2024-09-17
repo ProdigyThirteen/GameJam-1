@@ -17,6 +17,21 @@ public class MonkeyPawDoubleJump : MonoBehaviour
         player = GameObject.FindWithTag("Player");
         if (player != null)
             playerMovement = player.GetComponent<PlayerMovement>();
+
+        if (trapsToEnable == null)
+            trapsToEnable = GameObject.Find("PawTraps");
+        
+        SetupTraps();
+    }
+
+    private void SetupTraps()
+    {
+        if (trapsToEnable == null) return;
+        
+        for(var i = 0; i < trapsToEnable.transform.childCount; i++)
+        {
+            trapsToEnable.transform.GetChild(i).gameObject.SetActive(false);
+        }
     }
     
     private void OnTriggerEnter2D(Collider2D other)
@@ -36,10 +51,6 @@ public class MonkeyPawDoubleJump : MonoBehaviour
             {
                 trapsToEnable.transform.GetChild(i).gameObject.SetActive(true);
             }
-        }
-        else
-        {
-            Debug.LogWarning("No trapsToEnable object set in the Inspector. Please set one to enable traps.");
         }
         
         // Give the player an extra jump
