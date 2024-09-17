@@ -1,12 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [FormerlySerializedAs("movementSpeed")]
     [Header("Movement Settings")] 
     [SerializeField]
-    private float movementSpeed = 5.0f;
+    private float movementImpulse = 2000.0f;
     [SerializeField]
     private float maxMoveSpeed = 10.0f;
     
@@ -18,10 +21,11 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private LayerMask groundLayer;
     
-    // Private variables
+    // Internal variables
     private int _jumps = 0;
     private const float _groundCheckDistance = 0.1f;
-
+    
+    // Internal references
     private Rigidbody2D _rb;
     private Collider2D _playerCollider;
 
@@ -45,12 +49,12 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        float move = Input.GetAxis("Horizontal");
-        _rb.velocity = new Vector2(move * movementSpeed, _rb.velocity.y);
+        float input = Input.GetAxisRaw("Horizontal");
+        _rb.AddForce(input * movementImpulse * Time.deltaTime * Vector2.right);
         
-        if (_rb.velocity.magnitude > maxMoveSpeed)
+        if (Mathf.Abs(_rb.velocity.x) > maxMoveSpeed)
         {
-            _rb.velocity = _rb.velocity.normalized * maxMoveSpeed * Time.deltaTime;
+            _rb.velocity = new Vector2(Mathf.Sign(_rb.velocity.x) * maxMoveSpeed, _rb.velocity.y);
         }
     }
 
@@ -91,5 +95,25 @@ public class PlayerMovement : MonoBehaviour
     public void RemoveMaxJump()
     {
         maxJumps--;
+    }
+    
+    public void AddMovementImpulse(float speed)
+    {
+        movementImpulse += speed;
+    }
+    
+    public void RemoveMovementImpulse(float speed)
+    {
+        movementImpulse -= speed;
+    }
+    
+    public void AddMaxMoveSpeed(float speed)
+    {
+        maxMoveSpeed += speed;
+    }
+    
+    public void RemoveMaxMoveSpeed(float speed)
+    {
+        maxMoveSpeed -= speed;
     }
 }

@@ -4,20 +4,24 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    private Transform player;  // The player's transform (drag and drop the player here in the Inspector)
-    [SerializeField]
-    private float smoothTime = 0.3f;  // Time for the camera to reach the player
-    [SerializeField]
-    private Vector3 offset = new Vector3(0, 2, -10);  // Offset for the camera to follow the player
+    // The player's transform (drag and drop the player here in the Inspector)
+    private Transform player;
 
-    private Vector3 velocity = Vector3.zero;  // Required for SmoothDamp to track the current velocity
+    // Time for the camera to reach the player
+    [SerializeField] private float smoothTime = 0.3f;
+
+    // Offset for the camera to follow the player
+    [SerializeField] private Vector3 offset = new Vector3(0, 2, -10);
+
+    // Required for SmoothDamp to track the current velocity
+    private Vector3 velocity = Vector3.zero; 
 
     private void Start()
     {
         player = GameObject.FindWithTag("Player").transform;
     }
 
-    void LateUpdate()
+    void Update()
     {
         // Target position for the camera (player's position plus the offset)
         Vector3 targetPosition = player.position + offset;

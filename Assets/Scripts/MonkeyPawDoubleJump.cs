@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Security;
+using QFSW.QC;
 using UnityEngine;
 
 public class MonkeyPawDoubleJump : MonoBehaviour
@@ -21,7 +22,13 @@ public class MonkeyPawDoubleJump : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
-        
+
+        Collect();
+    }
+
+    [Command("AddDoubleJump")]
+    private void Collect()
+    {
         // Iterate through all children of the trapsToEnable object and set them to active
         if (trapsToEnable != null)
         {
