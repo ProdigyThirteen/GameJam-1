@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioManager))]
 public class GameInstance : MonoBehaviour
 {
     private static GameInstance _instance;
