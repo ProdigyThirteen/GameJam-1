@@ -14,6 +14,8 @@ public class PlayerMovement : MonoBehaviour
     private float movementImpulse = 2000.0f;
     [SerializeField]
     private float maxMoveSpeed = 10.0f;
+
+    [SerializeField] private AudioClip slideSound;
     
     [Header("Jump Settings")] 
     [SerializeField]
@@ -47,6 +49,14 @@ public class PlayerMovement : MonoBehaviour
         {
             _jumps = 0;
         }
+        
+        if (IsGrounded() && _rb.velocity.x != 0 && !AudioManager.Instance.IsEffectPlaying())
+        {
+            AudioManager.Instance.PlayEffect(slideSound);
+        }
+        
+        // Update sfx pitch based on player velocity
+        AudioManager.Instance.SetEffectPitch(1 + Mathf.Abs(_rb.velocity.x) / maxMoveSpeed);
     }
 
     private void Move()

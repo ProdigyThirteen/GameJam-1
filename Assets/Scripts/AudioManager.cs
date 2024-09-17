@@ -17,6 +17,7 @@ public class AudioManager : MonoBehaviour
     private float effectVolume = 1.0f;
 
     [SerializeField] private float effectPitchVariance = 0.1f;
+    private float _effectPitch = 1.0f;
 
     [Header("Music Settings")] [SerializeField]
     private float musicVolume = 1.0f;
@@ -26,17 +27,38 @@ public class AudioManager : MonoBehaviour
     [Header("UI Settings")] [SerializeField]
     private float uiVolume = 1.0f;
 
-    [SerializeField] private float uiPitchVariance = 0.1f;
-
     public void PlayEffect(AudioClip clip)
     {
         effectSource.PlayOneShot(clip);
+    }
+    
+    public void PlayEffectVariance(AudioClip clip)
+    {
+        effectSource.pitch = 1 + UnityEngine.Random.Range(-effectPitchVariance, effectPitchVariance);
+        effectSource.PlayOneShot(clip);
+        effectSource.pitch = 1;
+    }
+    public void SetEffectVolume(float volume)
+    {
+        effectVolume = Mathf.Clamp01(volume);
+        effectSource.volume = effectVolume;
+    }
+    
+    public void SetEffectPitch(float variance)
+    {
+        _effectPitch = Mathf.Clamp01(variance);
+    }
+    
+    public bool IsEffectPlaying()
+    {
+        return effectSource.isPlaying;
     }
 
     public void PlayMusic(AudioClip clip)
     {
         musicSource.clip = clip;
         musicSource.volume = musicVolume;
+        musicSource.loop = musicLoop;
         musicSource.Play();
     }
 
@@ -45,11 +67,6 @@ public class AudioManager : MonoBehaviour
         uiSource.PlayOneShot(clip);
     }
 
-    public void SetEffectVolume(float volume)
-    {
-        effectVolume = Mathf.Clamp01(volume);
-        effectSource.volume = effectVolume;
-    }
 
     public void SetMusicVolume(float volume)
     {
