@@ -10,11 +10,13 @@ public class PlayerBarrier : MonoBehaviour
     [SerializeField] private float barrierCooldown = 15.0f;
     [SerializeField] private AudioClip barrierPopSound;
 
-    private GameObject barrier;
+    private GameObject _barrier;
+    private ParticleSystem _barrierParticles;
     
     private void Start()
     {
         GenerateBarrier();
+        _barrierParticles = GetComponent<ParticleSystem>();
     }
 
     private void Update()
@@ -25,30 +27,30 @@ public class PlayerBarrier : MonoBehaviour
         if (barrierCooldown <= 0)
         {
             isBarrierActive = true;
-            barrier.SetActive(isBarrierActive);
+            _barrier.SetActive(isBarrierActive);
             barrierCooldown = 15.0f;
         }
     }
 
     private void GenerateBarrier()
     {
-        barrier = new GameObject("Barrier");
-        barrier.transform.parent = transform;
-        SpriteRenderer sr = barrier.AddComponent<SpriteRenderer>();
+        _barrier = new GameObject("Barrier");
+        _barrier.transform.parent = transform;
+        SpriteRenderer sr = _barrier.AddComponent<SpriteRenderer>();
         sr.sprite = Resources.Load<Sprite>("Sprites/Barrier");
         sr.sortingLayerName = "Player";
         sr.sortingOrder = 1;
-        barrier.transform.localScale = new Vector3(1.75f, 1.75f, 1.75f);
-        barrier.transform.localPosition = new Vector3(0, 0, 0);
-        barrier.transform.localRotation = Quaternion.identity;
+        _barrier.transform.localScale = new Vector3(1.75f, 1.75f, 1.75f);
+        _barrier.transform.localPosition = new Vector3(0, 0, 0);
+        _barrier.transform.localRotation = Quaternion.identity;
         
         // Generate a collider for the barrier
-        PolygonCollider2D collider = barrier.AddComponent<PolygonCollider2D>();
+        PolygonCollider2D collider = _barrier.AddComponent<PolygonCollider2D>();
         collider.isTrigger = true;
         
         
         // Set barrier to disabled
-        barrier.SetActive(false);
+        _barrier.SetActive(false);
     }
     
     private void OnCollisionEnter2D(Collision2D other)
@@ -58,7 +60,7 @@ public class PlayerBarrier : MonoBehaviour
         if (!isBarrierEnabled || !isBarrierActive) return;
         
         isBarrierActive = false;
-        barrier.SetActive(isBarrierActive);
+        _barrier.SetActive(isBarrierActive);
             
         // Throw the player in a random direction
         Rigidbody2D rb = gameObject.GetComponent<Rigidbody2D>();
@@ -66,12 +68,15 @@ public class PlayerBarrier : MonoBehaviour
         
         // Play the barrier pop sound
         AudioManager.Instance.PlayEffect(barrierPopSound);
+        
+        // Play the particles
+        _barrierParticles.Play();
     }
     
     public void EnableBarrier()
     {
         isBarrierEnabled = true;
         isBarrierActive = true;
-        barrier.SetActive(isBarrierActive);
+        _barrier.SetActive(isBarrierActive);
     }
 }

@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
             _jumps = 0;
         }
         
-        if (IsGrounded() && _rb.velocity.x != 0 && !AudioManager.Instance.IsEffectPlaying())
+        if (IsGrounded() && _rb.velocity.x != 0 && !AudioManager.Instance.IsEffectPlaying() && slideSound != null)
         {
             AudioManager.Instance.PlayEffect(slideSound);
         }
