@@ -5,23 +5,18 @@ using UnityEngine;
 [RequireComponent(typeof(AudioManager))]
 public class GameInstance : MonoBehaviour
 {
-    private static GameInstance _instance;
+    public static GameInstance Instance;
 
     private void Awake()
     {
-        if (_instance == null)
+        if (Instance == null)
         {
-            _instance = this;
+            Instance = this;
             DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
-    }
-    
-    public static ref GameInstance Get()
-    {
-        return ref _instance;
     }
 }

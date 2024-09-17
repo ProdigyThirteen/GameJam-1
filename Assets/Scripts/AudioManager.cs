@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    private static AudioManager _instance;
+    public static AudioManager Instance;
 
     [Header("Audio Sources")] [SerializeField]
     private AudioSource effectSource;
@@ -94,6 +94,19 @@ public class AudioManager : MonoBehaviour
         else
         {
             musicSource.UnPause();
+        }
+    }
+    
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
         }
     }
 }

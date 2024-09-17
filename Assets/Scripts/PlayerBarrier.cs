@@ -8,6 +8,7 @@ public class PlayerBarrier : MonoBehaviour
     [SerializeField] private bool isBarrierActive = false;
     [SerializeField] private bool isBarrierEnabled = false;
     [SerializeField] private float barrierCooldown = 15.0f;
+    [SerializeField] private AudioClip barrierPopSound;
 
     private GameObject barrier;
     
@@ -62,6 +63,9 @@ public class PlayerBarrier : MonoBehaviour
         // Throw the player in a random direction
         Rigidbody2D rb = gameObject.GetComponent<Rigidbody2D>();
         rb.AddForce(new Vector2(UnityEngine.Random.Range(-1.0f, 1.0f), UnityEngine.Random.Range(-1.0f, 1.0f)) * 500.0f);
+        
+        // Play the barrier pop sound
+        AudioManager.Instance.PlayEffect(barrierPopSound);
     }
     
     public void EnableBarrier()
