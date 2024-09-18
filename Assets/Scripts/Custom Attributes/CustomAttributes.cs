@@ -35,5 +35,54 @@ namespace CustomAttributes
         }
     }
 
-    
+    [Serializable]
+    public class Map<TKey, TValue>
+    {
+        [SerializeField] private List<TKey> keys = new List<TKey>();
+        [SerializeField] private List<TValue> values = new List<TValue>();
+
+        private Dictionary<TKey, TValue> dictionary = new Dictionary<TKey, TValue>();
+
+        public void OnBeforeSerialize()
+        {
+            keys.Clear();
+            values.Clear();
+
+            foreach (var pair in dictionary)
+            {
+                keys.Add(pair.Key);
+                values.Add(pair.Value);
+            }
+        }
+
+        public void OnAfterDeserialize()
+        {
+            dictionary.Clear();
+
+            if (keys.Count != values.Count)
+                throw new Exception("There are an unequal number of keys and values after deserialization.");
+
+            for (int i = 0; i < keys.Count; i++)
+            {
+                dictionary[keys[i]] = values[i];
+            }
+        }
+
+        public void Add(TKey key, TValue value)
+        {
+            dictionary[key] = value;
+        }
+
+        public bool TryGetValue(TKey key, out TValue value)
+        {
+            return dictionary.TryGetValue(key, out value);
+        }
+
+        public Dictionary<TKey, TValue>.KeyCollection Keys => dictionary.Keys;
+        public Dictionary<TKey, TValue>.ValueCollection Values => dictionary.Values;
+
+        public Dictionary<TKey, TValue> ToDictionary() => dictionary;
+    }
+
+
 }
