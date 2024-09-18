@@ -61,6 +61,12 @@ public class AudioManager : MonoBehaviour
         musicSource.loop = musicLoop;
         musicSource.Play();
     }
+    
+    public void SetMusicLoop(bool loop)
+    {
+        musicLoop = loop;
+        musicSource.loop = musicLoop;
+    }
 
     public void PlayUI(AudioClip clip)
     {
