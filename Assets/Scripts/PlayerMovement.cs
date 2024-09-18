@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
     // Internal references
     private Rigidbody2D _rb;
     private Collider2D _playerCollider;
-
+    public Animator _animator;
 
     private void Start()
     {
@@ -54,7 +54,16 @@ public class PlayerMovement : MonoBehaviour
         {
             AudioManager.Instance.PlayEffect(slideSound);
         }
-        
+
+        if (IsGrounded())
+        {
+            _animator.SetBool("IsGrounded", true);
+        }
+        else if(!IsGrounded())
+        {
+            _animator.SetBool("IsGrounded", false);
+        }
+
         // Update sfx pitch based on player velocity
         AudioManager.Instance.SetEffectPitch(1 + Mathf.Abs(_rb.velocity.x) / maxMoveSpeed);
     }
@@ -68,6 +77,19 @@ public class PlayerMovement : MonoBehaviour
         {
             _rb.velocity = new Vector2(Mathf.Sign(_rb.velocity.x) * maxMoveSpeed, _rb.velocity.y);
         }
+
+        _animator.SetFloat("Speed", Mathf.Abs(_rb.velocity.x));
+
+        if(_rb.velocity.x > 0.02)
+        {
+            transform.localScale = new Vector3(1, 1, 1);
+        }
+        else if(_rb.velocity.x < 0.02)
+        {
+            transform.localScale = new Vector3(-1, 1, 1);
+        }
+
+
     }
 
     private void Jump()
@@ -76,6 +98,8 @@ public class PlayerMovement : MonoBehaviour
         {
             _rb.velocity = new Vector2(_rb.velocity.x, jumpForce);
             _jumps++;
+
+
         }
     }
 
