@@ -20,7 +20,7 @@ public class Menu : MonoBehaviour
     }
 
     [Serializable]
-    enum ButtonType
+    public enum ButtonType
     {
         Start,
         Options,
@@ -31,7 +31,7 @@ public class Menu : MonoBehaviour
     }
 
     [Serializable]
-    struct MenuButton
+    public struct MenuButton
     {
         public ButtonType name;
         public Button button;
@@ -39,53 +39,18 @@ public class Menu : MonoBehaviour
 
     [SerializeField] public MenuType menu;
 
-    [SerializeField] private List<MenuButton> buttons = new List<MenuButton>();
-
-    public UnityEvent<MenuType> OnHidden;
-
-    public UnityEvent<MenuType> OnShown;
-
-    private void Awake()
-    {
-        foreach (var button in buttons)
-        {
-            switch (button.name)
-            {
-                case ButtonType.Start:
-                    button.button.onClick.AddListener(() => SceneHandler.Instance.LoadScene("PauseMenuTest"));
-                    break;
-                case ButtonType.Options:
-                    button.button.onClick.AddListener(() => MenuHandler.Instance.SwapMenu(MenuType.OptionsMenu, menu));
-                    break;
-                case ButtonType.Resume:
-                    button.button.onClick.AddListener(() => MenuHandler.Instance.ResumeGame());
-                    break;
-                case ButtonType.ExitGame:
-                    button.button.onClick.AddListener(() => SceneHandler.Instance.LoadScene("MainMenu"));
-                    break;
-                case ButtonType.ExitDesktop:
-                    button.button.onClick.AddListener(() => Application.Quit());
-                    break;
-                case ButtonType.Back:
-                    button.button.onClick.AddListener(() => MenuHandler.Instance.SwapToPreviousMenu());
-                break;
-                default:
-                    throw new ArgumentOutOfRangeException();
-            }
-        }
-    }
+    [SerializeField] public List<MenuButton> buttons = new List<MenuButton>();
 
     public void Hide()
     {
         gameObject.SetActive(false);
-        OnHidden?.Invoke(menu);
         
     }
 
     public void Show()
     {
         gameObject.SetActive(true);
-        OnShown?.Invoke(menu);
+       
     }
 
 
