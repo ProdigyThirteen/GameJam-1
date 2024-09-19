@@ -10,7 +10,25 @@ public class BreakablePlatform : MonoBehaviour
     [SerializeField]
     private float fallDelay = 1f;
 
-    private float destroySelfDelay = 2f;
+    private float disappearDelay = 2f;
+    private float respawnDelay = 1f;
+
+    private Vector3 startPosition;
+    private Quaternion startRotation;
+
+    private SpriteRenderer spriteRenderer;
+    private Collider2D platformCollider;
+
+
+    private void Start()
+    {
+        startPosition = transform.position;
+        startRotation = transform.rotation;
+
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        platformCollider = GetComponent<Collider2D>();
+
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -24,7 +42,30 @@ public class BreakablePlatform : MonoBehaviour
     {
         yield return new WaitForSeconds(fallDelay);
         rigidBody.bodyType = RigidbodyType2D.Dynamic;
-        Destroy(gameObject, destroySelfDelay);
+
+        
+        yield return new WaitForSeconds(disappearDelay);
+        spriteRenderer.enabled = false;
+        platformCollider.enabled = false;
+
+
+        yield return new WaitForSeconds(respawnDelay);
+        RespawnPlatform();
+
     }
-  
+
+    private void RespawnPlatform()
+    {
+        //Reset Platform
+        transform.position = startPosition;
+        transform.rotation = startRotation;
+        rigidBody.velocity = Vector2.zero;
+        rigidBody.angularVelocity = 0f;
+        rigidBody.bodyType = RigidbodyType2D.Kinematic;
+
+
+        spriteRenderer.enabled = true;
+        platformCollider.enabled = true;
+    }
+
 }
