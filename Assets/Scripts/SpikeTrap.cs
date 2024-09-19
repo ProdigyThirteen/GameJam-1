@@ -9,6 +9,12 @@ public class SpikeTrap : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            // Check for barrier
+            if (other.GetComponent<PlayerBarrier>().IsActive())
+            {
+                return;
+            }
+            
             Scene scene = SceneManager.GetActiveScene();
             SceneManager.LoadScene(scene.name);
         }
