@@ -15,14 +15,6 @@ public class CameraHijack : MonoBehaviour
     private Rigidbody2D _playerRb;
     private PlayerMovement _playerMovement;
     private Rigidbody2D _camPanLocationRb;
-
-    private bool fuckYouUnity = false;
-
-    private float fuckingStupidTimer = 0.0f;
-    private bool fuckYou1 = false;
-    private bool fuckYou2 = false;
-    private bool fuckYou3 = false;
-    private bool fuckYou4 = false;
     
     private void Start()
     {
