@@ -59,7 +59,11 @@ public class PlayerMovement : MonoBehaviour
         {
             _animator.SetBool("IsGrounded", true);
         }
-        else if(!IsGrounded())
+        else if(_rb.velocity.y > 0)
+        {
+            _animator.SetBool("IsGrounded", false);
+        }
+        else if (_rb.velocity.y < 0)
         {
             _animator.SetBool("IsGrounded", false);
         }
@@ -99,6 +103,7 @@ public class PlayerMovement : MonoBehaviour
             _rb.velocity = new Vector2(_rb.velocity.x, jumpForce);
             _jumps++;
 
+            _animator.SetTrigger("Jumped");
 
         }
     }
