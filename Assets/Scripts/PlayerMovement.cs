@@ -72,6 +72,18 @@ public class PlayerMovement : MonoBehaviour
 
         if (_input != 0)
             _lastInput = _input;
+        
+        // Check for walls, using _lastInput to determine if the player is facing left or right and only allow movement in the opposite direction
+        if (WallCheck() && Math.Abs(_input - _lastInput) < 0.1f)
+        {
+            Debug.Log("Wall detected!");
+            return;
+        }
+        else
+        {
+            Debug.Log("WallCheck: " + WallCheck() + " _input: " + _input + " _lastInput: " + _lastInput);
+        }
+        
 
         _rb.AddForce(_input * movementImpulse * Time.deltaTime * Vector2.right);
 
@@ -132,12 +144,33 @@ public class PlayerMovement : MonoBehaviour
         Vector2 position = transform.position;
         Vector2 size = _playerCollider.bounds.size;
 
-        Vector2 origin = new Vector2(position.x + size.x / 2, position.y);
+        Vector2 origin;
+        Vector2 direction;
+        const float radius = 0.4f;
+
+        // Handle different wall check origins based on player direction
+        switch (_lastInput)
+        {
+            case 1.0f:
+                origin = new Vector2(position.x + size.x / 2, position.y);
+                direction = Vector2.right;
+                break;
+            
+            case -1.0f:
+                origin = new Vector2(position.x - size.x / 2, position.y);
+                direction = Vector2.left;
+                break;
+            
+            default:
+                origin = Vector2.one;
+                direction = Vector2.right;
+                break;
+        }
 
         RaycastHit2D hit = Physics2D.CircleCast(
             origin,
-            0.5f,
-            Vector2.left,
+            radius,
+            direction,
             _groundCheckDistance,
             groundLayer
         );
