@@ -9,11 +9,18 @@ public class SpringPad : MonoBehaviour
 
     public Animator animatorSpring;
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(UnityEngine.Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            collision.gameObject.GetComponent<Rigidbody2D>().AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
+            Rigidbody2D rigidBody = collision.gameObject.GetComponent<Rigidbody2D>();
+
+            Vector2 velocity = rigidBody.velocity;
+            velocity.y = 0;
+            rigidBody.velocity = velocity;
+
+            rigidBody.AddForce(Vector2.up * bounceForce, ForceMode2D.Impulse);
+
             animatorSpring.SetTrigger("PlayerEnter");
         }
 
