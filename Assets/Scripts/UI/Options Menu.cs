@@ -7,7 +7,23 @@ using System;
 
 public class OptionsMenu : Menu
 {
-    [Category("Options Settings",TextAnchor.MiddleCenter)]
+    [Category("Tabs", TextAnchor.MiddleCenter)]
+    [SerializeField] private SettingsTab videoSettingsPanel;
+
+    [SerializeField] private SettingsTab audioSettingsPanel;
+
+    [Serializable]
+    struct SettingsTab
+    {
+        public RectTransform panel;
+        public Button button;
+        public RectTransform buttonRect;
+    }
+
+
+
+
+    [Category("Video Settings",TextAnchor.MiddleCenter)]
     [SerializeField] private Toggle fullscreenToggle;
 
     [SerializeField] private TMP_Dropdown resolutionDropdown;
@@ -16,8 +32,15 @@ public class OptionsMenu : Menu
 
     [SerializeField] private Toggle vsyncToggle;
 
-    [SerializeField] private Slider volumeSlider;
+    [Category("Audio Settings", TextAnchor.MiddleCenter)]
 
+    [SerializeField] private Slider masterVolumeSlider;
+
+    [SerializeField] private Slider musicVolumeSlider;
+
+    [SerializeField] private Slider sfxVolumeSlider;
+
+    [SerializeField] private Slider UIVolumeSlider;
 
     private void Start()
     {
@@ -34,9 +57,27 @@ public class OptionsMenu : Menu
 
         qualityDropdown.onValueChanged.AddListener(delegate { SetQuality(qualityDropdown.value); });
 
-        vsyncToggle.isOn = QualitySettings.vSyncCount == 1;
+        vsyncToggle.isOn = QualitySettings.vSyncCount == 0;
 
         vsyncToggle.onValueChanged.AddListener(delegate { SetVsync(vsyncToggle.isOn); });
+
+        videoSettingsPanel.button.onClick.AddListener(delegate { EnablePanel(videoSettingsPanel.panel, videoSettingsPanel.buttonRect); });
+        
+        audioSettingsPanel.button.onClick.AddListener(delegate { EnablePanel(audioSettingsPanel.panel, audioSettingsPanel.buttonRect); });
+
+    }
+
+    private void EnablePanel(RectTransform panelRect, RectTransform buttonRect)
+    {
+        Debug.Log("Enable Panel");
+
+        videoSettingsPanel.panel.gameObject.SetActive(false);
+        audioSettingsPanel.panel.gameObject.SetActive(false);
+
+        panelRect.gameObject.SetActive(true);
+
+        //Bring button to front
+        buttonRect.SetAsLastSibling();
 
     }
 
