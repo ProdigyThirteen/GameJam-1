@@ -19,7 +19,6 @@ public class MenuHandler : MonoBehaviour
 
     [SerializeField] private SceneReference sceneToLoadOnStart;
 
-
     private void Awake()
     {
         if(Instance == null)
@@ -39,6 +38,13 @@ public class MenuHandler : MonoBehaviour
         InitButtons();
     }
 
+    private void Start()
+    {
+        // Hide all menus except the main menu
+        SwapMenu(MenuType.MainMenu);
+        
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -56,7 +62,7 @@ public class MenuHandler : MonoBehaviour
         {
             foreach (var button in menu.buttons)
             {
-                switch (button.name)
+                switch (button.buttonType)
                 {
                     case ButtonType.Start:
                         button.button.onClick.AddListener(() => SceneHandler.Instance.LoadScene(sceneToLoadOnStart.SceneName));
@@ -107,9 +113,6 @@ public class MenuHandler : MonoBehaviour
                 menu.Hide();
             }
         }
-
-        
-
     }
 
     public void SwapToPreviousMenu()
