@@ -42,7 +42,7 @@ public class MonkeyPawDoubleJump : MonoBehaviour
     }
 
     [Command("AddDoubleJump")]
-    private void Collect()
+    public void Collect()
     {
         // Iterate through all children of the trapsToEnable object and set them to active
         if (trapsToEnable != null)

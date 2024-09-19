@@ -34,26 +34,33 @@ public class PlayerBarrier : MonoBehaviour
 
     private void GenerateBarrier()
     {
-        _barrier = new GameObject("Barrier");
-        _barrier.transform.parent = transform;
-        SpriteRenderer sr = _barrier.AddComponent<SpriteRenderer>();
+        _barrier = new GameObject("Barrier")
+        {
+            transform =
+            {
+                parent = transform,
+                localScale = new Vector3(1.25f, 1.25f, 1.25f),
+                localPosition = new Vector3(0, 0, 0),
+                localRotation = Quaternion.identity
+            }
+        };
+        var sr = _barrier.AddComponent<SpriteRenderer>();
         sr.sprite = Resources.Load<Sprite>("Sprites/Barrier");
         sr.sortingLayerName = "Player";
         sr.sortingOrder = 1;
-        _barrier.transform.localScale = new Vector3(1.75f, 1.75f, 1.75f);
-        _barrier.transform.localPosition = new Vector3(0, 0, 0);
-        _barrier.transform.localRotation = Quaternion.identity;
         
         // Generate a collider for the barrier
-        PolygonCollider2D collider = _barrier.AddComponent<PolygonCollider2D>();
-        collider.isTrigger = true;
+        PolygonCollider2D barrierCollider = _barrier.AddComponent<PolygonCollider2D>();
+        barrierCollider.isTrigger = true;
+        
+        
         
         
         // Set barrier to disabled
         _barrier.SetActive(false);
     }
     
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.gameObject.CompareTag("Trap")) return;
         
@@ -78,5 +85,10 @@ public class PlayerBarrier : MonoBehaviour
         isBarrierEnabled = true;
         isBarrierActive = true;
         _barrier.SetActive(isBarrierActive);
+    }
+    
+    public bool IsActive()
+    {
+        return isBarrierActive;
     }
 }

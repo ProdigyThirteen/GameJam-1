@@ -26,6 +26,7 @@ public class PlayerMovement : MonoBehaviour
     private const float _groundCheckDistance = 0.15f;
     private float _input;
     private float _lastInput = 0;
+    private bool _canMove = true;
 
     // Internal references
     private Rigidbody2D _rb;
@@ -40,6 +41,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        if (!_canMove)
+            return;
+        
         Move();
         Jump();
 
@@ -61,9 +65,6 @@ public class PlayerMovement : MonoBehaviour
         {
             _animator.SetBool("IsGrounded", false);
         }
-
-        // Update sfx pitch based on player velocity
-        AudioManager.Instance.SetEffectPitch(1 + Mathf.Abs(_rb.velocity.x) / maxMoveSpeed);
     }
 
     private void Move()
@@ -198,5 +199,10 @@ public class PlayerMovement : MonoBehaviour
     public void RemoveMaxMoveSpeed(float speed)
     {
         maxMoveSpeed -= speed;
+    }
+    
+    public void SetCanMove(bool canMove)
+    {
+        _canMove = canMove;
     }
 }

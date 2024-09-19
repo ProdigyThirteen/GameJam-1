@@ -53,4 +53,15 @@ public class CameraController : MonoBehaviour
         // Smoothly move the camera towards the target position using SmoothDamp
         transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref followVelocity, followSmoothTime);
     }
+    
+    public void SetTarget(GameObject target, Rigidbody2D targetRb)
+    {
+        player = target.transform;
+        playerRb = targetRb;
+    }
+    
+    public GameObject GetTarget()
+    {
+        return player.gameObject;
+    }
 }

@@ -9,25 +9,13 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Vasco_Test_Scene.unity
-    guid: ccf2cb88b140b5945b4528c37d600d12
-  - enabled: 1
-    path: Assets/Scenes/Jack_Test_Scene.unity
-    guid: 0844c6a980d25444c9a07fbf461b4847
-  - enabled: 1
-    path: Assets/Scenes/PauseMenuTest.unity
-    guid: 21af1f7f04006634eaea327b52218a95
-  - enabled: 1
-    path: Assets/Scenes/Will_Test_Scene.unity
-    guid: ab5da9dfe412e0549843665d52eb85d9
-  - enabled: 1
     path: Assets/Scenes/Level 1T.unity
     guid: b5c6333a05865214797e1079d199d373
   - enabled: 1
-    path: Assets/Scenes/Level 3.unity
-    guid: 57f56e8ea9ba89648a41467de7b52414
-  - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 3509d72ff38d13649880c59f251d2200
+  - enabled: 1
+    path: Assets/Scenes/Level 3.unity
+    guid: 57f56e8ea9ba89648a41467de7b52414
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
