@@ -853,7 +853,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0.000030517578, y: 0}
-  m_SizeDelta: {x: 0.000030518, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4059467210348367506
 CanvasRenderer:
@@ -1259,8 +1259,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 161.81, y: 0}
-  m_SizeDelta: {x: 323.61, y: 84}
+  m_AnchoredPosition: {x: 133.11908, y: 0}
+  m_SizeDelta: {x: 380.9919, y: 84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8717206744693908166
 CanvasRenderer:
@@ -2041,6 +2041,9 @@ MonoBehaviour:
   buttons:
   - buttonType: 5
     button: {fileID: 398804595446460014}
+    buttonHover: {fileID: 0}
+    buttonClickSound: {fileID: 0}
+    buttonHoverSound: {fileID: 0}
   videoSettingsPanel:
     panel: {fileID: 1325018647006334863}
     button: {fileID: 272322852442169712}
@@ -2699,7 +2702,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0.000015258789}
-  m_SizeDelta: {x: 0, y: 47.3209}
+  m_SizeDelta: {x: 0, y: 53.3238}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &2783544284016149233
 GameObject:
@@ -2812,8 +2815,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.5, y: -0.5}
-  m_SizeDelta: {x: -35, y: -13}
+  m_AnchoredPosition: {x: -12.5, y: -0.5}
+  m_SizeDelta: {x: -25, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4067868117983820171
 CanvasRenderer:
@@ -2870,8 +2873,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 45
+  m_fontSizeBase: 45
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3098,8 +3101,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 300, y: 50}
+  m_AnchoredPosition: {x: -0.0000040531, y: 0.000026226}
+  m_SizeDelta: {x: 338.6853, y: 55.2565}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4477297324926661162
 CanvasRenderer:
@@ -4114,8 +4117,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.000015258789}
-  m_SizeDelta: {x: 0, y: 47.321}
+  m_AnchoredPosition: {x: 0, y: -1.5007}
+  m_SizeDelta: {x: 0, y: 50.322}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3262515872881344684
 MonoBehaviour:
@@ -4200,8 +4203,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -0.000015258789}
-  m_SizeDelta: {x: 0, y: 47.321}
+  m_AnchoredPosition: {x: 0, y: -5.687}
+  m_SizeDelta: {x: 0, y: 58.6949}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &4062701794168673868
 MonoBehaviour:
@@ -5671,10 +5674,19 @@ MonoBehaviour:
   buttons:
   - buttonType: 2
     button: {fileID: 9161715118469192725}
+    buttonHover: {fileID: 0}
+    buttonClickSound: {fileID: 0}
+    buttonHoverSound: {fileID: 0}
   - buttonType: 1
     button: {fileID: 9097959057613423318}
+    buttonHover: {fileID: 0}
+    buttonClickSound: {fileID: 0}
+    buttonHoverSound: {fileID: 0}
   - buttonType: 3
     button: {fileID: 4139139170343612781}
+    buttonHover: {fileID: 0}
+    buttonClickSound: {fileID: 0}
+    buttonHoverSound: {fileID: 0}
 --- !u!1 &5433053833612927496
 GameObject:
   m_ObjectHideFlags: 0
@@ -5711,10 +5723,10 @@ RectTransform:
   - {fileID: 4754547739546353095}
   m_Father: {fileID: 5502733073667037239}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1546, y: 612}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &944156587841003555
 CanvasRenderer:
@@ -6378,7 +6390,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5985778537026503222}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -6388,8 +6400,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 161.81, y: 0}
-  m_SizeDelta: {x: 323.61, y: 84.3}
+  m_AnchoredPosition: {x: 142.2182, y: 0}
+  m_SizeDelta: {x: 362.7936, y: 84}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8759868694796840412
 CanvasRenderer:
@@ -7194,10 +7206,19 @@ MonoBehaviour:
   buttons:
   - buttonType: 0
     button: {fileID: 2383313324575017455}
+    buttonHover: {fileID: 0}
+    buttonClickSound: {fileID: 0}
+    buttonHoverSound: {fileID: 0}
   - buttonType: 1
     button: {fileID: 345973072652314402}
+    buttonHover: {fileID: 0}
+    buttonClickSound: {fileID: 0}
+    buttonHoverSound: {fileID: 0}
   - buttonType: 4
     button: {fileID: 5441098705572499915}
+    buttonHover: {fileID: 0}
+    buttonClickSound: {fileID: 0}
+    buttonHoverSound: {fileID: 0}
 --- !u!1 &6534015920380448252
 GameObject:
   m_ObjectHideFlags: 0
@@ -7681,8 +7702,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -7.5, y: -0.5}
-  m_SizeDelta: {x: -35, y: -13}
+  m_AnchoredPosition: {x: -12.5, y: -0.5}
+  m_SizeDelta: {x: -25, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5806065488946552235
 CanvasRenderer:
@@ -7739,8 +7760,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -7775,7 +7796,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 2.1566162, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -8125,8 +8146,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8143,8 +8164,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 37.17
+  m_fontSizeBase: 37.17
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9131,10 +9152,10 @@ RectTransform:
   - {fileID: 587232262639800891}
   m_Father: {fileID: 8328448095361248052}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 300, y: 50}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0.000026226}
+  m_SizeDelta: {x: -23.314697, y: 55.2565}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1957841593178063395
 CanvasRenderer:
@@ -9965,10 +9986,10 @@ RectTransform:
   - {fileID: 8504349934407282480}
   m_Father: {fileID: 1325018647006334863}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 1546, y: 612}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1326598368376006283
 CanvasRenderer:
@@ -10377,8 +10398,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -10395,8 +10416,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 35
+  m_fontSizeBase: 35
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

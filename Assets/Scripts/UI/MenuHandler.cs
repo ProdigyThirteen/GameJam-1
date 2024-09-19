@@ -11,13 +11,19 @@ public class MenuHandler : MonoBehaviour
 {
     public static MenuHandler Instance; 
 
+
+    [Category("Menus", TextAnchor.MiddleCenter)]
     [SerializeField] private List<Menu> menus = new List<Menu>();
 
     [SerializeField, ReadOnly] public MenuType currentMenu;
 
     [SerializeField, ReadOnly] public MenuType previousMenu;
 
+    [Category("Scene Start", TextAnchor.MiddleCenter)]
     [SerializeField] private SceneReference sceneToLoadOnStart;
+
+    [Category("Cursor", TextAnchor.MiddleCenter)]
+    [SerializeField] private Texture2D cursorTexture;
 
     private void Awake()
     {
@@ -36,6 +42,10 @@ public class MenuHandler : MonoBehaviour
         previousMenu = MenuType.None;
 
         InitButtons();
+
+        //Change cursor sprite
+        Cursor.SetCursor(cursorTexture, Vector2.zero, CursorMode.Auto);
+
     }
 
     private void Start()

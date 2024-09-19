@@ -124,7 +124,11 @@ public class OptionsMenu : Menu
 
         foreach (Resolution resolution in Screen.resolutions)
         {
-            resolutionDropdown.options.Add(new TMP_Dropdown.OptionData(resolution.ToString()));
+            //Only add resolutions that are 16:9 and remove duplicates
+            if (resolution.width % 16 == 0 && resolution.height % 9 == 0 && !resolutionDropdown.options.Exists(x => x.text == resolution.width + "x" + resolution.height))
+            {
+                resolutionDropdown.options.Add(new TMP_Dropdown.OptionData(resolution.width + "x" + resolution.height));
+            }
         }
 
         resolutionDropdown.RefreshShownValue();
