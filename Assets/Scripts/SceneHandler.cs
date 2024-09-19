@@ -3,6 +3,7 @@ using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DevLocker.Utils;
+using System.Collections;
 
 
 
@@ -56,5 +57,10 @@ public class SceneHandler : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
-    
+    public void LoadSceneDelay(string sceneName, float delay)
+    {
+        StartCoroutine(CoroutineUtility.DelayAction(delay, () => SceneManager.LoadScene(sceneName)));
+  
+    }
+
 }

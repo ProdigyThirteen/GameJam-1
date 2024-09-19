@@ -65,8 +65,8 @@ public class MenuHandler : MonoBehaviour
                 switch (button.buttonType)
                 {
                     case ButtonType.Start:
-                        button.button.onClick.AddListener(() => SceneHandler.Instance.LoadScene(sceneToLoadOnStart.SceneName));
-                        button.button.onClick.AddListener(() => HideAllMenus());
+                        button.button.onClick.AddListener(() => SceneHandler.Instance.LoadSceneDelay(sceneToLoadOnStart.SceneName,1f));
+                        button.button.onClick.AddListener(() => HideAllMenusDelay(2f));
                         button.button.onClick.AddListener(() => SetCurrentMenu(MenuType.None));
                         button.button.onClick.AddListener(() => SetPreviousMenu(MenuType.MainMenu));
                         button.button.onClick.AddListener(() => Resume());
@@ -126,6 +126,11 @@ public class MenuHandler : MonoBehaviour
         {
             menu.gameObject.SetActive(false);
         }
+    }
+
+    public void HideAllMenusDelay(float delay)
+    {
+        StartCoroutine(CoroutineUtility.DelayAction(delay, HideAllMenus));
     }
 
 
