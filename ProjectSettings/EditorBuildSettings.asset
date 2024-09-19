@@ -14,5 +14,11 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Jack_Test_Scene.unity
     guid: 0844c6a980d25444c9a07fbf461b4847
+  - enabled: 1
+    path: Assets/Scenes/PauseMenuTest.unity
+    guid: 21af1f7f04006634eaea327b52218a95
+  - enabled: 1
+    path: Assets/Scenes/Will_Test_Scene.unity
+    guid: ab5da9dfe412e0549843665d52eb85d9
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
