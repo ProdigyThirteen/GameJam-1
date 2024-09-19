@@ -75,15 +75,7 @@ public class PlayerMovement : MonoBehaviour
         
         // Check for walls, using _lastInput to determine if the player is facing left or right and only allow movement in the opposite direction
         if (WallCheck() && Math.Abs(_input - _lastInput) < 0.1f)
-        {
-            Debug.Log("Wall detected!");
             return;
-        }
-        else
-        {
-            Debug.Log("WallCheck: " + WallCheck() + " _input: " + _input + " _lastInput: " + _lastInput);
-        }
-        
 
         _rb.AddForce(_input * movementImpulse * Time.deltaTime * Vector2.right);
 
