@@ -84,9 +84,9 @@ public class MenuHandler : MonoBehaviour
                         button.button.onClick.AddListener(() => AudioManager.Instance.PlayUI(button.buttonClickSound));
                         button.buttonHover.OnButtonHover += () => AudioManager.Instance.PlayUI(button.buttonHoverSound);
                         break;
-                    case ButtonType.ExitGame:
-                        button.button.onClick.AddListener(() => SceneHandler.Instance.LoadScene("MainMenu"));
+                    case ButtonType.ExitToMainMenu:
                         button.button.onClick.AddListener(() => SwapMenu(MenuType.MainMenu, menu.menu));
+                        button.button.onClick.AddListener(() => SceneHandler.Instance.LoadSceneDelay("MainMenu",-1f));
                         button.button.onClick.AddListener(() => AudioManager.Instance.PlayUI(button.buttonClickSound));
                         button.buttonHover.OnButtonHover += () => AudioManager.Instance.PlayUI(button.buttonHoverSound);
                         break;
@@ -126,6 +126,11 @@ public class MenuHandler : MonoBehaviour
                 menu.Hide();
             }
         }
+    }
+
+    public void SwapMenuDelay(float delay, Menu.MenuType newMenu, MenuType prevMenu = MenuType.None)
+    {
+        StartCoroutine(CoroutineUtility.DelayAction(delay, () => SwapMenu(newMenu, prevMenu)));
     }
 
     public void SwapToPreviousMenu()

@@ -23,7 +23,7 @@ public class Menu : MonoBehaviour
         Start,
         Options,
         Resume,
-        ExitGame,
+        ExitToMainMenu,
         ExitDesktop,
         Back
     }
