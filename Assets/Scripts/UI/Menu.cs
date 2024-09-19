@@ -33,6 +33,9 @@ public class Menu : MonoBehaviour
     {
         public ButtonType buttonType;
         public Button button;
+        public ButtonHover buttonHover;
+        public AudioClip buttonClickSound;
+        public AudioClip buttonHoverSound;
     }
 
     [Category("Menu",TextAnchor.MiddleCenter)]

@@ -65,6 +65,21 @@ public class OptionsMenu : Menu
         
         audioSettingsPanel.button.onClick.AddListener(delegate { EnablePanel(audioSettingsPanel.panel, audioSettingsPanel.buttonRect); });
 
+        masterVolumeSlider.onValueChanged.AddListener(delegate { AudioManager.Instance.SetMasterVolume(masterVolumeSlider.value); });
+        masterVolumeSlider.value = AudioManager.Instance.GetMasterVolume();
+
+        musicVolumeSlider.onValueChanged.AddListener(delegate { AudioManager.Instance.SetMusicVolume(musicVolumeSlider.value); });
+        musicVolumeSlider.value = AudioManager.Instance.GetMusicVolume();
+
+        sfxVolumeSlider.onValueChanged.AddListener(delegate { AudioManager.Instance.SetEffectVolume(sfxVolumeSlider.value); });
+        sfxVolumeSlider.value = AudioManager.Instance.GetEffectVolume();
+
+        UIVolumeSlider.onValueChanged.AddListener(delegate { AudioManager.Instance.SetUIVolume(UIVolumeSlider.value); });
+        UIVolumeSlider.value = AudioManager.Instance.GetUIVolume();
+
+
+
+
     }
 
     private void EnablePanel(RectTransform panelRect, RectTransform buttonRect)

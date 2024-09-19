@@ -66,26 +66,39 @@ public class MenuHandler : MonoBehaviour
                 {
                     case ButtonType.Start:
                         button.button.onClick.AddListener(() => SceneHandler.Instance.LoadSceneDelay(sceneToLoadOnStart.SceneName,1f));
-                        button.button.onClick.AddListener(() => HideAllMenusDelay(2f));
+                        button.button.onClick.AddListener(() => HideAllMenusDelay(1f));
                         button.button.onClick.AddListener(() => SetCurrentMenu(MenuType.None));
                         button.button.onClick.AddListener(() => SetPreviousMenu(MenuType.MainMenu));
                         button.button.onClick.AddListener(() => Resume());
+                        button.button.onClick.AddListener(() => AudioManager.Instance.PlayUI(button.buttonClickSound));
+                        button.buttonHover.OnButtonHover += () => AudioManager.Instance.PlayUI(button.buttonHoverSound);
                         break;
                     case ButtonType.Options:
                         button.button.onClick.AddListener(() => SwapMenu(MenuType.OptionsMenu, menu.menu));
+                        button.button.onClick.AddListener(() => AudioManager.Instance.PlayUI(button.buttonClickSound));
+                        button.buttonHover.OnButtonHover += () => AudioManager.Instance.PlayUI(button.buttonHoverSound);
+
                         break;
                     case ButtonType.Resume:
                         button.button.onClick.AddListener(() => HandlePauseGame());
+                        button.button.onClick.AddListener(() => AudioManager.Instance.PlayUI(button.buttonClickSound));
+                        button.buttonHover.OnButtonHover += () => AudioManager.Instance.PlayUI(button.buttonHoverSound);
                         break;
                     case ButtonType.ExitGame:
                         button.button.onClick.AddListener(() => SceneHandler.Instance.LoadScene("MainMenu"));
                         button.button.onClick.AddListener(() => SwapMenu(MenuType.MainMenu, menu.menu));
+                        button.button.onClick.AddListener(() => AudioManager.Instance.PlayUI(button.buttonClickSound));
+                        button.buttonHover.OnButtonHover += () => AudioManager.Instance.PlayUI(button.buttonHoverSound);
                         break;
                     case ButtonType.ExitDesktop:
                         button.button.onClick.AddListener(() => Application.Quit());
+                        button.button.onClick.AddListener(() => AudioManager.Instance.PlayUI(button.buttonClickSound));
+                        button.buttonHover.OnButtonHover += () => AudioManager.Instance.PlayUI(button.buttonHoverSound);
                         break;
                     case ButtonType.Back:
                         button.button.onClick.AddListener(() => SwapToPreviousMenu());
+                        button.button.onClick.AddListener(() => AudioManager.Instance.PlayUI(button.buttonClickSound));
+                        button.buttonHover.OnButtonHover += () => AudioManager.Instance.PlayUI(button.buttonHoverSound);
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();
