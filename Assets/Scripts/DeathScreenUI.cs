@@ -11,7 +11,7 @@ public class DeathScreenUI : MonoBehaviour
     void Start()
     {
         UpdateDeathCountText();
-        AdjustFontSize();
+        //AdjustFontSize();
     }
 
     public void UpdateDeathCountText()
