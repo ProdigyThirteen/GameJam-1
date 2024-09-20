@@ -181,6 +181,11 @@ public class PlayerMovement : MonoBehaviour
         maxJumps--;
     }
 
+    public void ResetJumps()
+    {
+        _jumps = 0;
+    }
+
     public void AddMovementImpulse(float impulse)
     {
         movementImpulse += impulse;
