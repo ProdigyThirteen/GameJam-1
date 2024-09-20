@@ -112,7 +112,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 25
+        width: 24
         height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -131,9 +131,9 @@ TextureImporter:
       name: On (24x8)_1
       rect:
         serializedVersion: 2
-        x: 28
+        x: 24
         y: 0
-        width: 17
+        width: 24
         height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -152,9 +152,9 @@ TextureImporter:
       name: On (24x8)_2
       rect:
         serializedVersion: 2
-        x: 56
+        x: 48
         y: 0
-        width: 9
+        width: 24
         height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -173,9 +173,9 @@ TextureImporter:
       name: On (24x8)_3
       rect:
         serializedVersion: 2
-        x: 76
+        x: 72
         y: 0
-        width: 17
+        width: 24
         height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -193,7 +193,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 354da024ac47eae41ab223fba07bde43
     internalID: 0
     vertices: []
     indices: 
