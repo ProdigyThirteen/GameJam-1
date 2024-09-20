@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1274545117410327668}
   - component: {fileID: 4673338333048776679}
   - component: {fileID: 5952976149202696980}
+  - component: {fileID: 3155603407362011716}
   m_Layer: 0
   m_Name: Paw_DoubleJump
   m_TagString: Untagged
@@ -75,7 +76,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 6872150569121296585, guid: 0fd7680714248444cb1fccf158d5cf37, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -135,3 +136,17 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &3155603407362011716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6249348989386236403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d349b05d487f29740949d678cd6f5b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bobbingHeight: 0.2
+  bobbingSpeed: 1.2

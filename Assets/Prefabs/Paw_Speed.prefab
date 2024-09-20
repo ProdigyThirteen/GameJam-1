@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4541105392638382297}
   - component: {fileID: 3416310913074412240}
   - component: {fileID: 1884981603043780516}
+  - component: {fileID: -732566102320622189}
   m_Layer: 0
   m_Name: Paw_Speed
   m_TagString: Untagged
@@ -75,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.03525853, g: 1, b: 0, a: 1}
+  m_Sprite: {fileID: -398046150050628208, guid: 7696f1e9b4a65ab479f2865e5341726b, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -137,3 +138,17 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &-732566102320622189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4640267966374731653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d349b05d487f29740949d678cd6f5b16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bobbingHeight: 0.2
+  bobbingSpeed: 1.2
