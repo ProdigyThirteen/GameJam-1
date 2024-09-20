@@ -296143,7 +296143,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7671865550355698675, guid: b61df2d92fa344843bcdb607e8468beb, type: 3}
       propertyPath: zoomSmoothTime
-      value: 0.8
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7671865550355698675, guid: b61df2d92fa344843bcdb607e8468beb, type: 3}
+      propertyPath: followSmoothTime
+      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

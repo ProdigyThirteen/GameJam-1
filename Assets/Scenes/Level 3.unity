@@ -833,6 +833,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FanTrap (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7649352342029509157, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
+      propertyPath: minPushForce
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -899,6 +903,10 @@ PrefabInstance:
     - target: {fileID: 5062278391496832352, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
       propertyPath: m_Name
       value: FanTrap (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7649352342029509157, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
+      propertyPath: minPushForce
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1036,6 +1044,10 @@ PrefabInstance:
     - target: {fileID: 5062278391496832352, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
       propertyPath: m_Name
       value: FanTrap (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7649352342029509157, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
+      propertyPath: minPushForce
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -77238,6 +77250,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FanTrap (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7649352342029509157, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
+      propertyPath: minPushForce
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78609,6 +78625,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FanTrap (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7649352342029509157, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
+      propertyPath: minPushForce
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79196,6 +79216,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FanTrap (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 7649352342029509157, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
+      propertyPath: minPushForce
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79252,6 +79276,10 @@ PrefabInstance:
     - target: {fileID: 5062278391496832352, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
       propertyPath: m_Name
       value: FanTrap (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7649352342029509157, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
+      propertyPath: minPushForce
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -79468,6 +79496,10 @@ PrefabInstance:
     - target: {fileID: 5062278391496832352, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
       propertyPath: m_Name
       value: FanTrap (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7649352342029509157, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
+      propertyPath: minPushForce
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -80585,6 +80617,10 @@ PrefabInstance:
     - target: {fileID: 5062278391496832352, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
       propertyPath: m_Name
       value: FanTrap (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7649352342029509157, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
+      propertyPath: minPushForce
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -182982,6 +183018,10 @@ PrefabInstance:
     - target: {fileID: 5062278391496832352, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
       propertyPath: m_Name
       value: FanTrap
+      objectReference: {fileID: 0}
+    - target: {fileID: 7649352342029509157, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
+      propertyPath: minPushForce
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
