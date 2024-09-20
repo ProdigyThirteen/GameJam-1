@@ -181,6 +181,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -320,6 +324,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -396,6 +404,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -680,6 +692,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -741,6 +757,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -941,6 +961,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1084,6 +1108,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1155,6 +1183,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1216,6 +1248,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1277,6 +1313,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1338,6 +1378,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -76585,6 +76629,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -76646,6 +76694,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -76707,6 +76759,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -76836,6 +76892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -76912,6 +76972,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -76973,6 +77037,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77034,6 +77102,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77095,6 +77167,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77295,6 +77371,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77361,6 +77441,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77427,6 +77511,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77488,6 +77576,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77549,6 +77641,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77610,6 +77706,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77671,6 +77771,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77867,6 +77971,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -77928,6 +78036,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78014,6 +78126,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78080,6 +78196,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78141,6 +78261,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78202,6 +78326,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78283,6 +78411,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78416,6 +78548,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78534,6 +78670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78600,6 +78740,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78666,6 +78810,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78727,6 +78875,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78788,6 +78940,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78849,6 +79005,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78910,6 +79070,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -78971,6 +79135,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79362,6 +79530,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79423,6 +79595,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79484,6 +79660,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79550,6 +79730,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79611,6 +79795,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79677,6 +79865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79753,6 +79945,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79819,6 +80015,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79895,6 +80095,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -79956,6 +80160,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80022,6 +80230,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80083,6 +80295,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80154,6 +80370,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80215,6 +80435,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80281,6 +80505,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80465,6 +80693,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80526,6 +80758,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80656,6 +80892,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80717,6 +80957,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80778,6 +81022,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80839,6 +81087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80900,6 +81152,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -80961,6 +81217,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81022,6 +81282,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81168,6 +81432,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81291,6 +81559,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81352,6 +81624,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81413,6 +81689,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -182247,6 +182527,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -182386,6 +182670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -182395,6 +182683,108 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2217696468931805330, guid: ebc45cd527aa021489419643fbcd51f1, type: 3}
   m_PrefabInstance: {fileID: 1138974085}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2087322278
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2577517550496905506, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_Name
+      value: DeathScreen
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4801382380095755701, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+--- !u!1 &2087322279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2577517550496905506, guid: e2ca56e7c9ba2054da11288e8a9f2921, type: 3}
+  m_PrefabInstance: {fileID: 2087322278}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2098043856
 PrefabInstance:
@@ -182452,6 +182842,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -182518,6 +182912,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Trap (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6893110735170649656, guid: 9361bcd90c88e2f49ba5fb178125eebe, type: 3}
+      propertyPath: deathScreen
+      value: 
+      objectReference: {fileID: 2087322279}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -182605,3 +183003,4 @@ SceneRoots:
   - {fileID: 1354795406}
   - {fileID: 684865282}
   - {fileID: 1698448813}
+  - {fileID: 2087322278}
