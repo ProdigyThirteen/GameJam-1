@@ -31,6 +31,10 @@ public class SpikeTrap : MonoBehaviour
                 playerMovement.enabled = false;
             }
 
+            DeathManager.IncrementDeathCount();
+            int newDeathCount = DeathManager.GetDeathCount();
+
+
             StartCoroutine(ReloadSceneAfterDelay(1.2f));
 
         }
@@ -46,8 +50,7 @@ public class SpikeTrap : MonoBehaviour
 
         yield return new WaitForSeconds(delay);
 
-        DeathManager.IncrementDeathCount();
-        int newDeathCount = DeathManager.GetDeathCount();
+        
 
         Scene scene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(scene.name);

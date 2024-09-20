@@ -82,6 +82,7 @@ public class MenuHandler : MonoBehaviour
                         button.button.onClick.AddListener(() => Resume());
                         button.button.onClick.AddListener(() => AudioManager.Instance.PlayUI(button.buttonClickSound));
                         button.buttonHover.OnButtonHover += () => AudioManager.Instance.PlayUI(button.buttonHoverSound);
+                        button.button.onClick.AddListener(() => DeathManager.ResetDeathCount());
                         break;
                     case ButtonType.Options:
                         button.button.onClick.AddListener(() => SwapMenu(MenuType.OptionsMenu, menu.menu));
